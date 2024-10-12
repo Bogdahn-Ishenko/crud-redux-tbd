@@ -1,0 +1,32 @@
+.productListContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+}
+.productListContentWrapper {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+.productListWrapper {
+  position: relative;
+
+  display: flex;
+  height: 100%;
+  flex: 1 50%;
+  width: 100%;
+}
+
+.productList {
+  display: flex;
+
+  box-sizing: border-box;
+  flex-direction: column;
+  row-gap: 22px;
+  background-color: #fff;
+  height: 100%;
+  overflow: scroll;
+}

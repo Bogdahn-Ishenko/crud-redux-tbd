@@ -1,0 +1,147 @@
+label {
+  cursor: default;
+}
+label span {
+  cursor: pointer;
+}
+input,
+textarea {
+  cursor: auto;
+}
+select {
+  cursor: pointer;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  transition: all ease-in-out 0.1s;
+  outline: 2px solid #fa655f !important;
+}
+.productAddForm {
+}
+.productAddDialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30%;
+  height: 80%;
+
+  box-shadow: 1px 6px 10px 2px #b1b1b140;
+  border-radius: 20px;
+  padding: 20px;
+}
+.dialogForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 30px;
+}
+
+.dialogFormElem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.dialogFormElemTitle {
+  padding-left: 5px;
+  color: #353535;
+  font-size: 14px;
+}
+
+.dialogFormElemField {
+  padding: 8px 15px 8px 10px;
+  outline: 1px solid #353535;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.dialogFormElemInput::placeholder {
+  opacity: 0;
+}
+
+.dialogFormElemInput:hover::placeholder {
+  opacity: 1;
+}
+
+.dialogFormElemSelect {
+  min-width: 40%;
+}
+.dialogFormElemSelect option {
+  outline: 1px solid #353535;
+  background-color: rgb(255, 255, 255);
+}
+.dialogFormElemTextArea {
+  resize: none;
+}
+.dialogFormElemTextArea:focus {
+  outline: 2px solid #fa655f;
+}
+.productAddFormControls {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+}
+.productAddFormControls > * {
+  padding: 5px 10px 6px 10px;
+  border-radius: 8px;
+}
+.productAddFormControls > *:hover {
+  outline: 2px solid #fa655f;
+}
+.dialogFormElemImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 30px 10px;
+}
+.dialogFormElemImageText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0px;
+
+  margin-top: auto;
+}
+.dialogFormElemImage h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.dialogFormElemImage p {
+  color: #858585;
+}
+.dialogFormElemImageLoad {
+  font-size: 16px;
+}
+.dialogFormElemImageLoad span {
+  padding: 5px 10px 6px 10px;
+  border-radius: 8px;
+  background-color: #dbdbdb60;
+}
+.dialogFormElemImageLoad span:hover {
+  outline: 2px solid #fa655f;
+}
+.dialogFormElemImageLoad span:active {
+  background-color: #fa655f;
+  color: #fff;
+}
+.dialogFormElemImageLoad input {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.imageProduct {
+  padding: 5px;
+  color: #858585;
+}
+.drag {
+  background-color: red;
+}
+dialog::backdrop {
+  background: rgba(235, 235, 235, 0.3);
+}

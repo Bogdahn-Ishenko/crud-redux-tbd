@@ -1,0 +1,10 @@
+.container {
+  padding: 40px 20px;
+  box-shadow: inset 0px 0px 20px 2px #a5a5a520;
+  border-radius: 20px;
+  width: 100%;
+}
+.item {
+  box-shadow: 1px 6px 10px 2px #b1b1b140;
+  border-radius: 10px;
+}
